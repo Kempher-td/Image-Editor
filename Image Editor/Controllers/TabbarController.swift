@@ -14,11 +14,11 @@ final class TabbarController: UITabBarController {
         case settings
     }
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        configure()
-    }
     
+    init() {
+            super.init(nibName: nil, bundle: nil)
+            configure()
+        }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
